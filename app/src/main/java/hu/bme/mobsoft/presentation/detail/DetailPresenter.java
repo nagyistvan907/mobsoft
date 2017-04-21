@@ -10,11 +10,15 @@ public class DetailPresenter extends BasePresenter<IDetailScreen> implements IDe
 
     @Override
     public void clickEdit() {
-
+        if (screen!=null){
+            screen.navigateToEdit();
+        }
     }
 
     @Override
     public void clicksBack() {
-
+        if (screen!=null){
+            screen.navigateBack();
+        }
     }
 }

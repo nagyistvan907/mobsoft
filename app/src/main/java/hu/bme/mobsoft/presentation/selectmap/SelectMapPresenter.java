@@ -1,5 +1,7 @@
 package hu.bme.mobsoft.presentation.selectmap;
 
+import java.util.Scanner;
+
 import hu.bme.mobsoft.presentation.base.BasePresenter;
 
 /**
@@ -11,11 +13,15 @@ public class SelectMapPresenter extends BasePresenter<ISelectMapScreen> implemen
 
     @Override
     public void longTapMap(String location) {
-
+        if (screen!=null){
+            screen.navigateBack();
+        }
     }
 
     @Override
     public void clickBack() {
-
+        if (screen!=null){
+            screen.navigateBack();
+        }
     }
 }

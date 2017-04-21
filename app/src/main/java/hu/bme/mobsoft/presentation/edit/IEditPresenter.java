@@ -1,5 +1,6 @@
 package hu.bme.mobsoft.presentation.edit;
 
+import hu.bme.mobsoft.model.Shop;
 import hu.bme.mobsoft.presentation.base.IBasePresenter;
 
 /**
@@ -14,5 +15,7 @@ public interface IEditPresenter extends IBasePresenter<IEditScreen> {
     void clickModify();
 
     void clickBack();
+
+    void setShop(Shop shop);
 
 }

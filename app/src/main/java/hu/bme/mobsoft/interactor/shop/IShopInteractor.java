@@ -16,6 +16,6 @@ public interface IShopInteractor {
 
     Shop modifyShop(Shop shop);
 
-    boolean deleteShop(int shopId);
+    boolean deleteShop(Shop shop);
 
 }

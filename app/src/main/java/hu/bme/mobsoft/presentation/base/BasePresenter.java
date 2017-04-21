@@ -6,7 +6,7 @@ package hu.bme.mobsoft.presentation.base;
 
 public class BasePresenter<S extends IBaseScreen> implements IBasePresenter<S> {
 
-    private S screen;
+    protected S screen;
 
     @Override
     public void attachScreen(S screen) {
